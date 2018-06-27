@@ -64,7 +64,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content == '!jeff help') {
-    message.channel.sendMessage('https://pastebin.com/sdJsUjXH');
+    message.channel.sendMessage('https://pastebin.com/raw/sdJsUjXH');
   }
 });
 
