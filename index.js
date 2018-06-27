@@ -62,6 +62,12 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.content == '!jeff help') {
+    message.channel.sendMessage('https://pastebin.com/sdJsUjXH');
+  }
+});
+
 
 const rando_imgs = [
 'https://i.imgur.com/3QK8XKs.jpg',
