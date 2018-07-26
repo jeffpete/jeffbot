@@ -134,3 +134,52 @@ const rando_imgs = [
 'https://i.imgur.com/KI4WnZT.jpg',
 'https://i.imgur.com/3XnnaTE.png',
 ]
+
+
+client .on('message', (message) => {
+  if(message.content == '!jeff mystery') {
+        var VC = message.member.voiceChannel;
+        if (!VC)
+            message.channel.sendMessage ('get original pl0x'); 
+    VC.join()
+        .then(connection => {
+      message.channel.sendMessage ('get fixed'); 
+            const dispatcher = connection.playFile('mystery.mp3');
+            dispatcher.on("end", end => {VC.leave()});
+        })
+        .catch(console.error);
+  }
+});
+
+dispatcher.on("end", end => {VC.leave()});
+
+
+client .on('message', (message) => {
+  if(message.content == '`') {
+        var VC = message.member.voiceChannel;
+        if (!VC)
+            message.channel.sendMessage ('get original pl0x'); 
+    VC.join()
+        .then(connection => {
+            connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568")
+            client.leaveVoiceChannel(message.member.voiceState.channelID);
+        })
+        .catch(console.error);
+  }
+});
+
+
+
+client .on('message', (message) => {
+  if(message.content == '`') {
+        var VC = message.member.voiceChannel;
+        if (!VC)
+            message.channel.sendMessage ('get original pl0x'); 
+    VC.join()
+        .then(connection => {
+           const dispatcher = connection.playArbitraryInput("https://my.mixtape.moe/vyutlt.mp3")
+           dispatcher.on("end", end => {VC.leave()});
+        })
+        .catch(console.error);
+  }
+});

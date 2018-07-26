@@ -150,25 +150,18 @@ client .on('message', (message) => {
 });
 
 client .on('message', (message) => {
-  if(message.content == '!jeff mystery') {
+  if(message.content == '`') {
         var VC = message.member.voiceChannel;
         if (!VC)
             message.channel.sendMessage ('get original pl0x'); 
     VC.join()
         .then(connection => {
-      message.channel.sendMessage ('get fixed'); 
-            const dispatcher = connection.playFile('mystery.mp3');
-            dispatcher.on("end", end => {VC.leave()});
+           const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568")
+           dispatcher.on("end", end => {VC.leave()});
         })
         .catch(console.error);
   }
 });
-
-client .on('message', (message) => {
-  if(message.content == '!jeff fuckoff') {
-        client.leaveVoiceChannel(message.member.voiceState.channelID);
-        message.channel.createMessage(`Thanks for tuning in!`); }
-           });
 
 client.on('message', (message) => {
   if(message.content == '!jeff yote') {
