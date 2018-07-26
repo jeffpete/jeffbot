@@ -1,5 +1,5 @@
 {
-  "name": "super-basic-bot",
+  "name": "jeffpete-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YorkAARGH/SuperbasicBot.git"
+    "url": "git+hhttps://github.com/jeffpete/jeffbot.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YorkAARGH/SuperbasicBot/issues"
+    "url": "https://github.com/jeffpete/jeffbot"
   },
-  "homepage": "https://github.com/YorkAARGH/SuperbasicBot#readme",
+  "homepage": "https://pastebin.com/raw/sdJsUjXH",
   "dependencies": {
     "discord.js": "^11.3.2",
     "express": "^4.16.3",
