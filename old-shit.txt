@@ -60,3 +60,77 @@ var randomImage = images[rand];
 message.channel.send("jeff", randomImage); 
   }
 });
+
+
+client.on('message', (message) => {
+  if (isReady && message.content === '!jeff mystery')
+  {
+  isReady = false;
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     //const dispatcher = connection.playFile('./mystery.wav');
+    // dispatcher.on("end", end => {
+       voiceChannel.leave();
+       });
+   }).catch(err => console.log(err));
+   isReady = true;
+  }
+});
+
+
+client .on('message', (message) => {
+  if(message.content == '!jeff orange') {
+   var number = 2;
+      var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+      case 1: message.channel.sendMessage ('https://i.imgur.com/nuEwimT.gif'); break;
+        case 2: message.channel.sendMessage ('https://i.imgur.com/nuEwimT.gif'); break;
+                  }
+  }
+});
+
+client .on('message', (message) => {
+  if(message.content == 'no u') {
+   var number = 4;
+      var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+      case 1: message.channel.sendMessage ('that is a really bad comeback'); break;
+        case 2: message.channel.sendMessage ('*laughing hysterically'); break;
+      case 3: message.channel.sendMessage ('wowee good one'); break;
+      case 4: message.channel.sendMessage ('nobody has used that one before'); break;
+                  }
+  }
+});
+
+
+
+// get admin commands from other file
+const adminCmds = require('./cmds.js');
+
+// set message listener 
+client.on('message', message => {
+    let command = message.content;
+
+    // execute admin commands
+    // -> if function checkAdminCmd returns false, move on to checking 'other' commands
+    if ( adminCmds.checkAdminCmd(message) )
+        return;
+
+    // execute other commands
+    else {
+        switch(command) {
+            case '?PING':
+                message.reply('pong');
+                break;
+
+            // ... other commands here
+        }
+    }
+});
+
+const rando_imgs = [
+'https://i.imgur.com/3QK8XKs.jpg',
+'https://i.imgur.com/KI4WnZT.jpg',
+'https://i.imgur.com/3XnnaTE.png',
+]

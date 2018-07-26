@@ -4,6 +4,7 @@ dependencies:
   discord.js: 11.3.2
   discord.js-commando: 0.10.0
   express: 4.16.3
+  ffmpeg: 0.0.4
   numbers: 0.6.0
   request: 2.87.0
 packages:
@@ -341,6 +342,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-1RQsDK7msRifh9OnYREGT4bIu/I=
+  /ffmpeg/0.0.4:
+    dependencies:
+      when: 3.7.8
+    dev: false
+    resolution:
+      integrity: sha1-HEYN+OfaUSf2LO70v6BsWciWMMs=
   /finalhandler/1.1.1:
     dependencies:
       debug: 2.6.9
@@ -846,6 +853,10 @@ packages:
       '0': node >=0.6.0
     resolution:
       integrity: sha1-OhBcoXBTr1XW4nDB+CiGguGNpAA=
+  /when/3.7.8:
+    dev: false
+    resolution:
+      integrity: sha1-xxMLan6gRpPoQs3J56Hyqjmjn4I=
   /wrappy/1.0.2:
     dev: false
     resolution:
@@ -866,5 +877,6 @@ specifiers:
   discord.js: ^11.3.2
   discord.js-commando: ^0.10.0
   express: ^4.16.3
+  ffmpeg: ^0.0.4
   numbers: ^0.6.0
   request: ^2.87.0

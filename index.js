@@ -38,6 +38,19 @@ client.on('message', (message) => {
   }
 });
 
+client .on('message', (message) => {
+  if(message.content == '!jeff haha') {
+   var number = 4;
+      var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+      case 1: message.channel.sendMessage ('https://i.imgur.com/3XnnaTE.png'); break;
+        case 2: message.channel.sendMessage ('https://i.imgur.com/KI4WnZT.jpg'); break;
+      case 3: message.channel.sendMessage ('https://i.imgur.com/x6fJIJp.jpg'); break;
+      case 4: message.channel.sendMessage ('https://i.imgur.com/3eX6PCU.jpg'); break;
+                  }
+  }
+});
+
 client.on('message', (message) => {
   if(message.content == '!jeff yote') {
     message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
@@ -64,26 +77,101 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content == '!jeff help') {
-    message.channel.sendMessage('https://pastebin.com/sdJsUjXH');
+    message.channel.sendMessage('https://pastebin.com/raw/sdJsUjXH');
   }
 });
 
+client.on('message', (message) => {
+  if(message.content == '!jeff onlygamerknow') {
+    message.channel.sendMessage('https://i.imgur.com/sfUhK86.jpg');
+  }
+});
 
-const rando_imgs = [
-'https://i.imgur.com/3QK8XKs.jpg',
-'https://i.imgur.com/KI4WnZT.jpg',
-'https://i.imgur.com/3XnnaTE.png',
-]
+client.on('message', (message) => {
+  if(message.content == '!jeff longor') {
+    message.channel.sendMessage('http://s3.crackedcdn.com/phpimages/article/7/5/0/23750.jpg?v=1');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == '!jeff leel') {
+    message.channel.sendMessage('Caac fef lal heh roor feef lool caac ses');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == '!jeff 6ix9ine') {
+    message.channel.sendMessage('Caac fef lal heh roor feef lool caac ses');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == '!jeff busting') {
+    message.channel.sendMessage('https://i.imgur.com/COmBL8s.png');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == '!jeff cocc') {
+    message.channel.sendMessage('https://my.mixtape.moe/plfrel.mp4');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == '!jeff stolenmeme') {
+    message.channel.sendMessage('https://my.mixtape.moe/gfnhlh.mp4');
+  }
+});
 
 client .on('message', (message) => {
-  if(message.content == '!jeff haha') {
+  if(message.content == 'no u') {
+   var number = 4;
+      var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+      case 1: message.channel.sendMessage ('that is a really bad comeback'); break;
+        case 2: message.channel.sendMessage ('*laughing hysterically'); break;
+      case 3: message.channel.sendMessage ('wowee good one'); break;
+      case 4: message.channel.sendMessage ('nobody has used that one before'); break;
+                  }
+  }
+});
+
+client .on('message', (message) => {
+  if(message.content == '\:no_u:') {
    var number = 5;
       var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
     switch (random) {
-      case 1: message.channel.sendMessage ('https://i.imgur.com/3XnnaTE.png'); break;
-        case 2: message.channel.sendMessage ('https://i.imgur.com/KI4WnZT.jpg'); break;
-      case 3: message.channel.sendMessage ('https://i.imgur.com/x6fJIJp.jpg'); break;
-      case 4: message.channel.sendMessage ('https://i.imgur.com/3eX6PCU.jpg'); break;
+      case 1: message.channel.sendMessage ('shit emote'); break;
+        case 2: message.channel.sendMessage ('get original pl0x'); break;
+      case 3: message.channel.sendMessage ('Seriously?'); break;
+      case 4: message.channel.sendMessage ('Please say you did not buy nitro for that'); break;
                   }
+  }
+});
+
+client .on('message', (message) => {
+  if(message.content == '!jeff mystery') {
+        var VC = message.member.voiceChannel;
+        if (!VC)
+            message.channel.sendMessage ('get original pl0x'); 
+    VC.join()
+        .then(connection => {
+      message.channel.sendMessage ('get fixed'); 
+            const dispatcher = connection.playFile('mystery.mp3');
+            dispatcher.on("end", end => {VC.leave()});
+        })
+        .catch(console.error);
+  }
+});
+
+client .on('message', (message) => {
+  if(message.content == '!jeff fuckoff') {
+        client.leaveVoiceChannel(message.member.voiceState.channelID);
+        message.channel.createMessage(`Thanks for tuning in!`); }
+           });
+
+client.on('message', (message) => {
+  if(message.content == '!jeff yote') {
+    message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
   }
 });
