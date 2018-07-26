@@ -135,3 +135,43 @@ client .on('message', (message) => {
                   }
   }
 });
+
+client .on('message', (message) => {
+  if(message.content == '\:no_u:') {
+   var number = 5;
+      var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+      case 1: message.channel.sendMessage ('shit emote'); break;
+        case 2: message.channel.sendMessage ('get original pl0x'); break;
+      case 3: message.channel.sendMessage ('Seriously?'); break;
+      case 4: message.channel.sendMessage ('Please say you did not buy nitro for that'); break;
+                  }
+  }
+});
+
+client .on('message', (message) => {
+  if(message.content == '!jeff mystery') {
+        var VC = message.member.voiceChannel;
+        if (!VC)
+            message.channel.sendMessage ('get original pl0x'); 
+    VC.join()
+        .then(connection => {
+      message.channel.sendMessage ('get fixed'); 
+            const dispatcher = connection.playFile('mystery.mp3');
+            dispatcher.on("end", end => {VC.leave()});
+        })
+        .catch(console.error);
+  }
+});
+
+client .on('message', (message) => {
+  if(message.content == '!jeff fuckoff') {
+        client.leaveVoiceChannel(message.member.voiceState.channelID);
+        message.channel.createMessage(`Thanks for tuning in!`); }
+           });
+
+client.on('message', (message) => {
+  if(message.content == '!jeff yote') {
+    message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
+  }
+});

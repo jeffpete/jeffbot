@@ -33,6 +33,8 @@
     "node.js": "^0.0.0",
     "node": "^10.5.0",
     "emitter": "^0.0.5",
-    "event-emitter": "^0.3.5"
+    "event-emitter": "^0.3.5",
+    "v-charts": "^1.17.8",
+    "node-opus": "^0.3.0"
   }
 }
