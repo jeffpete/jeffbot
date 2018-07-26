@@ -151,15 +151,17 @@ client .on('message', (message) => {
 
 client .on('message', (message) => {
   if(message.content == '`') {
-        var VC = message.member.voiceChannel;
-        if (!VC)
-            message.channel.sendMessage ('get original pl0x'); 
-    VC.join()
+        var channel = message.member.voiceChannel;
+        if (!channel) 
+          message.channel.sendMessage ('Listen here, stupid, you are not in a voice channel.'); 
+    if (!channel)
+          return console.error("The channel does not exist!"); 
+              channel.join()
         .then(connection => {
            const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568")
-           dispatcher.on("end", end => {VC.leave()});
+           dispatcher.on("end", end => {channel.leave()});
         })
-        .catch(console.error);
+      
   }
 });
 
