@@ -22,6 +22,10 @@ client.on('ready',() => {
   console.log('I\'m Online\nI\'m Online');
 });
 
+const fs = require("fs");
+
+       
+
 const prefix = '~';
 client.on('message', message => {
   if (message.author === client.user) return;
@@ -77,7 +81,7 @@ client.on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content == '!jeff help') {
-    message.channel.sendMessage('https://pastebin.com/raw/sdJsUjXH');
+    message.channel.sendMessage('https://pastebin.com/raw/nVuhJfyv');
   }
 });
 
@@ -120,6 +124,12 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.content == '!jeff stolenmeme') {
     message.channel.sendMessage('https://my.mixtape.moe/gfnhlh.mp4');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == '!jeff soy') {
+    message.channel.sendMessage('https://my.mixtape.moe/ubrsvx.mov');
   }
 });
 
@@ -221,3 +231,43 @@ client.on('message', (message) => {
         }     
     }
 });
+
+bot.commands = new Discord.Collection();
+
+fs.readdir("./commands/", (err, files) => {
+  
+   if(err) console.log(err);
+
+  let jsfile = files.filter(f => f.split(".").pop() === "js");
+  if(jsfile.length <= 0){
+    console.log("Couldn't find commands.");
+    return;
+  }
+
+  jsfile.forEach((f, i) =>{
+    let props = require(`./commands/${f}`);
+    console.log(`${f} loaded!`);
+    bot.commands.set(props.help.name, props);
+  });
+
+});
+
+bot.on("ready", () => {
+       console.log('Bot is ready! ${bot.user.username}');
+});
+
+bot.on("message", async message => {
+  if(message.author.bot) return;
+  if(message.channel.type === "dm") return;
+  
+  let messageArray = message.content.split(/\s+/g);
+  let command = messageArray[0];
+  let args = messageArray.slice(1);
+  
+  if(!command.startswith(prefix)) return;
+  
+  let cmd = bot.commands.get(command.slice(prefix.length))
+  if(cmd) cmd.run(bot, message, args);
+});
+       
+

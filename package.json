@@ -35,6 +35,11 @@
     "emitter": "^0.0.5",
     "event-emitter": "^0.3.5",
     "v-charts": "^1.17.8",
-    "node-opus": "^0.3.0"
+    "node-opus": "^0.3.0",
+    "nodemon": "^1.18.3",
+    "fs-extra": "^7.0.0",
+    "async": "^2.6.1",
+    "fs": "^0.0.2",
+    "path": "^0.12.7"
   }
 }
