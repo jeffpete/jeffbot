@@ -29,7 +29,7 @@ const fs = require("fs");
 const prefix = '~';
 client.on('message', message => {
   if (message.author === client.user) return;
-  if (message.content.startsWith(prefix + '!jeff ping')) {
+  if (message.content.startsWith(prefix + '!jeff leave')) {
     message.channel.sendMessage('pong');
   }
 });
@@ -159,49 +159,20 @@ client .on('message', (message) => {
   }
 });
 
-client .on('message', (message) => {
-  if(message.content == '!jeff mystery') {
-        var channel = message.member.voiceChannel;
-        if (!channel) 
-          message.channel.sendMessage ('Listen here, stupid, you are not in a voice channel.'); 
-    if (!channel)
-          return console.error("The channel does not exist!"); 
-              channel.join()
-        .then(connection => {
-           const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568")
-           dispatcher.on("end", end => {channel.leave()});
-        })
-      
-  }
-});
-
-client .on('message', (message) => {
-  if(message.content == '`') {
-        var channel = message.member.voiceChannel;
-        if (!channel) 
-          message.channel.sendMessage ('Listen here, stupid, you are not in a voice channel.'); 
-    if (!channel)
-          return console.error("The channel does not exist!"); 
-              channel.join()
-        .then(connection => {
-           const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568")
-           dispatcher.on("end", end => {channel.leave()});
-        })
-      
-  }
-});
 client.on('message', (message) => {
   if(message.content == '!jeff changelog') {
     message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
   }
 });
 
-let botChannel = undefined;
+
+
+let botChannel= undefined;
 
 const joinChannel = (channel) => {
     channel.join().then(connection => {
         botChannel = channel;
-        playAudio(connection, 'https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568');
+        playAudio(connection, 'https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fkillsound_5bd0b.mp3?1533931339415');
     });
 }
 
@@ -213,7 +184,9 @@ const leaveChannel = () => {
 const playAudio = (connection, audioUrl) => {
     const dispatcher = connection.playArbitraryInput(audioUrl);
     dispatcher.on("end", end => {
-        leaveChannel();
+      client.on('message', (message) => {
+        message.channel.send('!leave');
+      });
     });
 };
 
@@ -231,6 +204,46 @@ client.on('message', (message) => {
         }     
     }
 });
+
+
+let botChannel2 = undefined;
+
+const joinChannel2 = (channel) => {
+    channel.join().then(connection => {
+        botChannel2 = channel;
+        playAudio2(connection, 'https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568');
+    });
+}
+
+const leaveChannel2 = () => {
+    botChannel2.leave();
+    botChannel2 = undefined;
+};
+
+const playAudio2 = (connection, audioUrl) => {
+    const dispatcher = connection.playArbitraryInput(audioUrl);
+    dispatcher.on("end", end => {
+      client.on('message', (message) => {
+        message.channel.send('!leave');
+      });
+    });
+};
+
+client.on('message', (message) => {
+    if (message.content == '!jeff 2') {
+        var channel = message.member.voiceChannel;
+
+        if (!channel) {
+            message.channel.sendMessage('You need to be in a voice channel to use this command.');
+            return console.error("The channel does not exist!"); 
+        }
+
+        if (!botChannel2) {
+            joinChannel2(channel);
+        }     
+    }
+});
+
 
 bot.commands = new Discord.Collection();
 
@@ -271,3 +284,35 @@ bot.on("message", async message => {
 });
        
 
+
+
+client.on('message', (message) => {
+  const joinChannel2 = (channel) => {
+  if(message.content == '!jeff changelog') {
+    message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
+    botChannel = undefined;
+    channel.leave(); 
+  }
+  }
+});
+
+client.on('message', (message) => {
+      if (message.content == '!leave') {
+        var channel = message.member.voiceChannel;
+
+                channel.leave(); 
+            
+                 
+    }
+});
+
+bot.on('message', function(message) {
+    // Now, you can use the message variable inside
+    if (message.content === "$loop") { 
+        var interval = setInterval (function () {
+            // use the message's channel (TextChannel) to send a new message
+            message.channel.send("123")
+            .catch(console.error); // add error handling here
+        }, 1 * 1000); 
+    }
+});
