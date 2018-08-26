@@ -1,0 +1,95 @@
+     client.on('message', (message) => {
+  if(message.content == 'bjeff aids') {
+    message.channel.sendMessage('https://my.mixtape.moe/fqfnox.webm');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff yeet') {
+    message.channel.sendMessage('yote');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff yote') {
+    message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff pleeb') {
+    message.channel.sendMessage('yeah, Chebureki, this bot has only existed for like 3 hours');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff help') {
+    message.channel.sendMessage('https://jeffpetebothelp.glitch.me/');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff onlygamerknow') {
+    message.channel.sendMessage('https://i.imgur.com/sfUhK86.jpg');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff longor') {
+    message.channel.sendMessage('http://s3.crackedcdn.com/phpimages/article/7/5/0/23750.jpg?v=1');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff leel') {
+    message.channel.sendMessage('Caac fef lal heh roor feef lool caac ses');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff 6ix9ine') {
+    message.channel.sendMessage('Caac fef lal heh roor feef lool caac ses');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff busting') {
+    message.channel.sendMessage('https://i.imgur.com/COmBL8s.png');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff cocc') {
+    message.channel.sendMessage('https://my.mixtape.moe/plfrel.mp4');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff stolenmeme') {
+    message.channel.sendMessage('https://my.mixtape.moe/gfnhlh.mp4');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff soy') {
+    message.channel.sendMessage('https://my.mixtape.moe/ubrsvx.mov');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff johnny') {
+    message.channel.sendMessage('https://pre00.deviantart.net/077d/th/pre/i/2016/053/f/3/dukey_in_johnny_flesh_by_applebeans-d9srwyr.png');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff peak') {
+    message.channel.sendMessage('https://my.mixtape.moe/fqfnox.webm');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff callme') {
+    message.channel.sendMessage('https://my.mixtape.moe/wnglhp.mp4');
+      }
+});

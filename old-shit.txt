@@ -238,3 +238,42 @@ client .on('message', (message) => {
       
   }
 });
+
+
+let botChannel2 = undefined;
+
+const joinChannel2 = (channel) => {
+    channel.join().then(connection => {
+        botChannel2 = channel;
+        playAudio2(connection, 'https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568');
+    });
+}
+
+const leaveChannel2 = () => {
+    botChannel2.leave();
+    botChannel2 = undefined;
+};
+
+const playAudio2 = (connection, audioUrl) => {
+    const dispatcher = connection.playArbitraryInput(audioUrl);
+    dispatcher.on("end", end => {
+      client.on('message', (message) => {
+        client.channels.find(`name`,`bots`).send(`bjeff l`);
+             });
+    });
+};
+
+client.on('message', (message) => {
+    if (message.content == 'bjeff mystery') {
+        var channel = message.member.voiceChannel;
+
+        if (!channel) {
+            message.channel.sendMessage('You need to be in a voice channel to use this command.');
+            return console.error("The channel does not exist!"); 
+        }
+
+        if (!botChannel2) {
+            joinChannel2(channel);
+        }     
+    }
+});
