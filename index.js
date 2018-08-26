@@ -22,6 +22,10 @@ client.on('ready',() => {
   console.log('I\'m Online\nI\'m Online');
 });
 
+client.on('ready',() => {
+client.user.setActivity('at Ram Ranch | bjeff help for help');
+});
+
 const fs = require("fs");
 
        
@@ -29,21 +33,17 @@ const fs = require("fs");
 const prefix = '~';
 client.on('message', message => {
   if (message.author === client.user) return;
-  if (message.content.startsWith(prefix + '!jeff leave')) {
+  if (message.content.startsWith(prefix + 'bjeff leave')) {
     message.channel.sendMessage('pong');
   }
 });
 
 client.login(process.env.TOKEN);
 
-client.on('message', (message) => {
-  if(message.content == '!jeff yeet') {
-    message.channel.sendMessage('yote');
-  }
-});
+
 
 client .on('message', (message) => {
-  if(message.content == '!jeff haha') {
+  if(message.content == 'bjeff haha') {
    var number = 4;
       var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
     switch (random) {
@@ -55,83 +55,26 @@ client .on('message', (message) => {
   }
 });
 
-client.on('message', (message) => {
-  if(message.content == '!jeff yote') {
-    message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
-  }
-});
+
 
 client.on('message', (message) => {
-  if(message.content == '!jeff ridegasm') {
+  if(message.content == 'bjeff ridegasm') {
     message.channel.sendMessage('https://pbs.twimg.com/profile_images/378800000758437408/b5f3cc10d9adb85e9e05538d42b36b59_400x400.png');
   }
 });
 
 client.on('message', (message) => {
-  if(message.content == '!jeff ridegasm') {
+  if(message.content == 'bjeff ridegasm') {
     message.channel.sendMessage('https://pbs.twimg.com/profile_images/378800000758437408/b5f3cc10d9adb85e9e05538d42b36b59_400x400.png');
-  }
+  message.channel.sendMessage('https://pbs.twimg.com/profile_images/378800000758437408/b5f3cc10d9adb85e9e05538d42b36b59_400x400.png');
+    message.channel.sendMessage('https://pbs.twimg.com/profile_images/378800000758437408/b5f3cc10d9adb85e9e05538d42b36b59_400x400.png');
+    message.channel.sendMessage('https://pbs.twimg.com/profile_images/378800000758437408/b5f3cc10d9adb85e9e05538d42b36b59_400x400.png');
+    message.channel.sendMessage('https://pbs.twimg.com/profile_images/378800000758437408/b5f3cc10d9adb85e9e05538d42b36b59_400x400.png');
+    message.channel.sendMessage('https://pbs.twimg.com/profile_images/378800000758437408/b5f3cc10d9adb85e9e05538d42b36b59_400x400.png');
+    }
 });
 
-client.on('message', (message) => {
-  if(message.content == '!jeff pleeb') {
-    message.channel.sendMessage('yeah, Chebureki, this bot has only existed for like 3 hours');
-  }
-});
 
-client.on('message', (message) => {
-  if(message.content == '!jeff help') {
-    message.channel.sendMessage('https://pastebin.com/raw/nVuhJfyv');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.content == '!jeff onlygamerknow') {
-    message.channel.sendMessage('https://i.imgur.com/sfUhK86.jpg');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.content == '!jeff longor') {
-    message.channel.sendMessage('http://s3.crackedcdn.com/phpimages/article/7/5/0/23750.jpg?v=1');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.content == '!jeff leel') {
-    message.channel.sendMessage('Caac fef lal heh roor feef lool caac ses');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.content == '!jeff 6ix9ine') {
-    message.channel.sendMessage('Caac fef lal heh roor feef lool caac ses');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.content == '!jeff busting') {
-    message.channel.sendMessage('https://i.imgur.com/COmBL8s.png');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.content == '!jeff cocc') {
-    message.channel.sendMessage('https://my.mixtape.moe/plfrel.mp4');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.content == '!jeff stolenmeme') {
-    message.channel.sendMessage('https://my.mixtape.moe/gfnhlh.mp4');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.content == '!jeff soy') {
-    message.channel.sendMessage('https://my.mixtape.moe/ubrsvx.mov');
-  }
-});
 
 client .on('message', (message) => {
   if(message.content == 'no u') {
@@ -160,7 +103,7 @@ client .on('message', (message) => {
 });
 
 client.on('message', (message) => {
-  if(message.content == '!jeff changelog') {
+  if(message.content == 'bjeff changelog') {
     message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
   }
 });
@@ -184,14 +127,13 @@ const leaveChannel = () => {
 const playAudio = (connection, audioUrl) => {
     const dispatcher = connection.playArbitraryInput(audioUrl);
     dispatcher.on("end", end => {
-      client.on('message', (message) => {
-        message.channel.send('!leave');
+              client.channels.find(`name`,`general`).send(`bjeff l`);
       });
-    });
+    
 };
 
 client.on('message', (message) => {
-    if (message.content == '!jeff 1') {
+    if (message.content == 'bjeff yuh') {
         var channel = message.member.voiceChannel;
 
         if (!channel) {
@@ -211,7 +153,7 @@ let botChannel2 = undefined;
 const joinChannel2 = (channel) => {
     channel.join().then(connection => {
         botChannel2 = channel;
-        playAudio2(connection, 'https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568');
+        playAudio2(connection, 'https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fkillsound_5bd0b.mp3?1533931339415');
     });
 }
 
@@ -223,14 +165,13 @@ const leaveChannel2 = () => {
 const playAudio2 = (connection, audioUrl) => {
     const dispatcher = connection.playArbitraryInput(audioUrl);
     dispatcher.on("end", end => {
-      client.on('message', (message) => {
-        message.channel.send('!leave');
-      });
-    });
+      client.channels.find(`name`,`general`).send(`bjeff l`);
+             });
+    
 };
 
 client.on('message', (message) => {
-    if (message.content == '!jeff 2') {
+    if (message.content == 'bjeff mystery') {
         var channel = message.member.voiceChannel;
 
         if (!channel) {
@@ -288,7 +229,7 @@ bot.on("message", async message => {
 
 client.on('message', (message) => {
   const joinChannel2 = (channel) => {
-  if(message.content == '!jeff changelog') {
+  if(message.content == 'bjeff changelog') {
     message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
     botChannel = undefined;
     channel.leave(); 
@@ -297,7 +238,7 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
-      if (message.content == '!leave') {
+      if (message.content == 'bjeff l') {
         var channel = message.member.voiceChannel;
 
                 channel.leave(); 
@@ -306,13 +247,95 @@ client.on('message', (message) => {
     }
 });
 
-bot.on('message', function(message) {
-    // Now, you can use the message variable inside
-    if (message.content === "$loop") { 
-        var interval = setInterval (function () {
-            // use the message's channel (TextChannel) to send a new message
-            message.channel.send("123")
-            .catch(console.error); // add error handling here
-        }, 1 * 1000); 
+client.on('message', (message) => {
+      if (message.content == 'bjeff l') {
+        var channel = message.member.voiceChannel2;
+
+                channel.leave(); 
+            
+                 
     }
 });
+
+bot.on('message', function() {
+    client.on('message', (message) => {
+      if (message.content == '!p') {
+         message.channel.send("123") (10000);
+       
+      }
+    });
+    });
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff flesh') {
+    client.guilds.get(461554225558585364).channels.get(481122092125913089).send("Spook!");
+  }
+});
+
+   
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff test2') {
+client.channels.find(`name`,`welcome`).send(`Thx for invite`);
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'donkong') {
+   message.channel.sendMessage('https://my.mixtape.moe/fqfnox.webm');
+    }
+   else if(message.content == 'kongwon') {
+   message.channel.sendMessage('jeff');
+    }
+  else if(message.content == 'bjeff yeet') {
+    message.channel.sendMessage('yote');
+	}
+	else if(message.content == 'bjeff yote') {
+    message.channel.sendMessage('IT DO NO WORK WAY ROUND NO');
+	}
+  else if(message.content == 'bjeff pleeb') {
+    message.channel.sendMessage('yeah, Chebureki, this bot has only existed for like 3 hours');
+    }
+  else if(message.content == 'bjeff help') {
+    message.channel.sendMessage('https://jeffpetebothelp.glitch.me/');
+    }
+  else if(message.content == 'bjeff onlygamerknow') {
+    message.channel.sendMessage('https://i.imgur.com/sfUhK86.jpg');
+    }
+  else if(message.content == 'bjeff longor') {
+    message.channel.sendMessage('http://s3.crackedcdn.com/phpimages/article/7/5/0/23750.jpg?v=1');
+    }
+  else if(message.content == 'bjeff leel') {
+    message.channel.sendMessage('Caac fef lal heh roor feef lool caac ses');
+	}
+  else if(message.content == 'bjeff 6ix9ine') {
+    message.channel.sendMessage('Caac fef lal heh roor feef lool caac ses');
+    }
+  else if(message.content == 'bjeff busting') {
+    message.channel.sendMessage('https://i.imgur.com/COmBL8s.png');
+	}
+  else if(message.content == 'bjeff cocc') {
+    message.channel.sendMessage('https://my.mixtape.moe/plfrel.mp4');
+	}
+  else if(message.content == 'bjeff stolenmeme') {
+    message.channel.sendMessage('https://my.mixtape.moe/gfnhlh.mp4');
+	}	
+  else if(message.content == 'bjeff soy') {
+    message.channel.sendMessage('https://my.mixtape.moe/ubrsvx.mov');
+	}
+  else if(message.content == 'bjeff johnny') {
+    message.channel.sendMessage('https://pre00.deviantart.net/077d/th/pre/i/2016/053/f/3/dukey_in_johnny_flesh_by_applebeans-d9srwyr.png');
+	}
+  else if(message.content == 'bjeff peak') {
+    message.channel.sendMessage('https://my.mixtape.moe/fqfnox.webm');
+	}
+  else if(message.content == 'bjeff callme') {
+    message.channel.sendMessage('https://my.mixtape.moe/wnglhp.mp4');
+	}
+  else if(message.content == 'bjeff aids') {
+    message.channel.sendMessage('https://my.mixtape.moe/fqfnox.webm');
+   }
+});
+  
+
+
