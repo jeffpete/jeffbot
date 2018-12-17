@@ -335,8 +335,11 @@ client.on('message', (message) => {
   else if(message.content == 'bjeff changelong') {
     message.channel.send('https://jeffpetebothelp.glitch.me/changelog.html');
   }
+  else if(message.content == 'bjeff clap') {
+    message.channel.send('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclap.mp4?1545053825548');
+  }
   else if(message.content == 'bjeff version') {
-    message.channel.send('Version is build 13102018');
+    message.channel.send('Version is build 17122018');
   }
 });
   
@@ -346,7 +349,7 @@ client.on('message', (message) => {
 
 client .on('message', (message) => {
   if(message.content == 'bjeff roll') {
-   var number = 39;
+   var number = 68;
       var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
     switch (random) {
       case 1: message.channel.sendMessage ('https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fbear.mp4?1537391174426'); break;
@@ -388,6 +391,35 @@ client .on('message', (message) => {
         case 37: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fnormieloud.mp4?1539466957763'); break;
         case 38: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fhaaaaaaah.mp4?1539466966296'); break;
         case 39: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fnotquitemytempo.mp4?1539466976289'); break;
+        case 40: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fidkthereference.mp4?1540302780283'); break;
+        case 41: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fhertpenor.mp4?1540302780439'); break;
+        case 42: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fflex.mp4?1540302780655'); break;
+        case 43: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbump.mp4?1540302781046'); break;
+        case 44: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fsansss.mp4?1540302784978'); break;
+        case 45: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fsansanansans.mp4?1540302787580'); break;
+        case 46: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fwiwiwiwii.mp4?1540302788518'); break;
+        case 47: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fnumanuma.mp4?1540302789522'); break;
+        case 48: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fcrust.mp4?1540302790879'); break;
+        case 49: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fhell.mp4?1540302809848'); break;
+        case 50: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fmanannouncesthathehadatoiletno.mp4?1541350493444'); break;
+        case 51: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fdream.mp4?1541350503052'); break;
+        case 52: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fsaveanime.mp4?1541351028408'); break;
+        case 53: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fsansanssasansas.mp4?1541351030060'); break;
+        case 54: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ftokofthetik.mp4?1541351030985'); break;
+        case 55: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fdownwiththememe.mp4?1545053811840'); break;
+        case 56: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Freactcardo.mp4?1545053812999'); break;
+        case 57: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fpeppermint.mp4?1545053816574'); break;
+        case 58: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fidksomeguyreferencingsomethingidontknow.mp4?1545053818346'); break;
+        case 59: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbadehttih.mp4?1545053819520'); break;
+        case 60: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fcar.mp4?1545053822622'); break;
+        case 61: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fgondolacardo.mp4?1545053823500'); break;
+        case 62: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbirdcardo.mp4?1545053824193'); break;
+        case 63: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fnoticeme.mp4?1545053825018'); break;
+        case 64: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclap.mp4?1545053825548'); break;
+        case 65: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fahememe.mp4?1545053828103'); break;
+        case 66: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fledleladlelo.mp4?1545053829057'); break;
+        case 67: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbanefamilyvalues.mp4?1545053834601'); break;
+        case 68: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fibis.mp4?1545053836620'); break;
         
         
         
@@ -399,7 +431,7 @@ client .on('message', (message) => {
 
 client.on('message', (message) => {
   if(message.content == 'bjeff test') {
-    message.channel.sendMessage('https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fskope.mp4?1537391208068');
+    message.channel.sendMessage('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbadehttih.mp4?1545053063540');
   }
 });
 
