@@ -429,10 +429,52 @@ client .on('message', (message) => {
   }
 });
 
+/* case : message.channel.sendMessage({files: [""]}); break;  */
+client .on('message', (message) => {
+  if(message.content == 'bjeff fight') {
+   var number = 6;
+      var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+            case 1: message.channel.sendMessage({files: ["https://i.imgur.com/tNRXz8O.png"]}); break;
+      case 2: message.channel.sendMessage({files: ["https://i.imgur.com/tRGDh0N.png"]}); break;
+      case 3: message.channel.sendMessage({files: ["https://i.imgur.com/0Cl2lLy.png"]}); break;
+      case 4: message.channel.sendMessage({files: ["https://i.imgur.com/j6PBxul.png"]}); break;   
+        case 5: message.channel.sendMessage({files: ["https://i.imgur.com/nJIEwpT.png"]}); break; 
+        case 6: message.channel.sendMessage({files: ["https://i.imgur.com/wydQhXP.png"]}); break; 
+                  }
+  }
+});
+
 client.on('message', (message) => {
   if(message.content == 'bjeff test') {
     message.channel.sendMessage('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbadehttih.mp4?1545053063540');
   }
 });
 
+client.on('message', (message) => {
+  if(message.content == 'bjeff fight help') {
+    message.channel.sendMessage({files: ["https://cooltext.com/Rendered/Cool-Text-309521164883898.png"]});
+    message.channel.sendMessage('It is like Yu-Gi-Oh mixed with Top Trumps. Whoever has the highest Jeff Power after all Jeff Abilities have been applied wins. Simple');
+  }
+});
 
+
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff flip') {
+{
+      function doRandHT() {
+var rand = ['HEADS','TAILS'];
+
+return rand[Math.floor(Math.random()*rand.length)];
+}
+
+ const embed = {
+"title": `Result`,
+"description": doRandHT(),
+"color": 7584788,
+};
+message.channel.send({ embed });
+}
+}
+});
