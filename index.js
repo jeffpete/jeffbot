@@ -18,6 +18,30 @@ const commando = require('discord.js-commando');
 const bot = new commando.Client();
 const client = new Discord.Client();
 
+// get admin commands from other file
+const adminCmds = require('./com.js');
+
+// set message listener 
+client.on('message', message => {
+    let command = message.content;
+
+    // execute admin commands
+    // -> if function checkAdminCmd returns false, move on to checking 'other' commands
+    if ( adminCmds.checkAdminCmd(message) )
+        return;
+
+    // execute other commands
+    else {
+        switch(command) {
+            case '?PING':
+                message.reply('pong');
+                break;
+
+            // ... other commands here
+        }
+    }
+});
+
 client.on('ready',() => {
   console.log('I\'m Online\nI\'m Online');
 });
@@ -339,7 +363,7 @@ client.on('message', (message) => {
     message.channel.send('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclap.mp4?1545053825548');
   }
   else if(message.content == 'bjeff version') {
-    message.channel.send('Version is build 17122018');
+    message.channel.send('Version is build 12012019');
   }
 });
   
@@ -349,7 +373,7 @@ client.on('message', (message) => {
 
 client .on('message', (message) => {
   if(message.content == 'bjeff roll') {
-   var number = 68;
+   var number = 88;
       var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
     switch (random) {
       case 1: message.channel.sendMessage ('https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fbear.mp4?1537391174426'); break;
@@ -420,6 +444,30 @@ client .on('message', (message) => {
         case 66: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fledleladlelo.mp4?1545053829057'); break;
         case 67: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbanefamilyvalues.mp4?1545053834601'); break;
         case 68: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fibis.mp4?1545053836620'); break;
+        case 69: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ftetris.mp4?1545231451945'); break;
+        case 70: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Feaster.mp4?1545231456694'); break;
+        case 71: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fweird.mp4?1545231473697'); break;
+        case 72: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclownmedication.mp4?1545231484222'); break;
+        case 73: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fsleepclown.mp4?1545231487128'); break;
+        case 74: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fsit.mp4?1545231495905'); break;
+        case 75: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fnastyclown.mp4?1545231499410'); break;
+        case 76: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclownslap.mp4?1545231501160'); break;
+        case 77: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclownthotnik.mp4?1545231505771'); break;
+        case 78: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclown2.mp4?1545231507820'); break;
+        case 79: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclownattack.mp4?1545231510637'); break;
+        case 80: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclown.mp4?1545231514685'); break;
+        case 81: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fwaffle.mp4?1545231524312'); break;
+        case 82: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fdogogodogdogdogdogdodogodgogodgod.mp4?1545231526614'); break;
+        case 83: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ficantfindit.mp4?1545231530189'); break;
+        case 84: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fmemes.mp4?1545231539994'); break;
+        case 85: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbanememe.mp4?1545231543934'); break;
+        case 86: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fdream.mp4?1545231551034'); break;
+        case 87: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fgoodday.mp4?1545231552177'); break;
+        case 88: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fpeach.mp4?1545231592724'); break;
+        
+        
+        
+        /* case : message.channel.sendMessage (''); break; */
         
         
         
@@ -432,7 +480,7 @@ client .on('message', (message) => {
 /* case : message.channel.sendMessage({files: [""]}); break;  */
 client .on('message', (message) => {
   if(message.content == 'bjeff fight') {
-   var number = 6;
+   var number = 7;
       var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
     switch (random) {
             case 1: message.channel.sendMessage({files: ["https://i.imgur.com/tNRXz8O.png"]}); break;
@@ -441,6 +489,8 @@ client .on('message', (message) => {
       case 4: message.channel.sendMessage({files: ["https://i.imgur.com/j6PBxul.png"]}); break;   
         case 5: message.channel.sendMessage({files: ["https://i.imgur.com/nJIEwpT.png"]}); break; 
         case 6: message.channel.sendMessage({files: ["https://i.imgur.com/wydQhXP.png"]}); break; 
+        case 7: message.channel.sendMessage({files: ["https://i.imgur.com/6IMC66X.png"]}); break; 
+        case 7: message.channel.sendMessage({files: ["https://i.imgur.com/IypzpfF.png"]}); break;
                   }
   }
 });
@@ -452,9 +502,41 @@ client.on('message', (message) => {
 });
 
 client.on('message', (message) => {
+  if(message.content == 'bjeff database') {
+    message.channel.sendMessage('https://jeff-fight-card-database.glitch.me/');
+  }
+});
+
+client.on('message', (message) => {
   if(message.content == 'bjeff fight help') {
     message.channel.sendMessage({files: ["https://cooltext.com/Rendered/Cool-Text-309521164883898.png"]});
     message.channel.sendMessage('It is like Yu-Gi-Oh mixed with Top Trumps. Whoever has the highest Jeff Power after all Jeff Abilities have been applied wins. Simple');
+    message.channel.sendMessage('To find out how to make your own cards, say "bjeff custom cards" in the chat!');
+    message.channel.sendMessage('Use "bjeff database" to view this anytime');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.content == 'bjeff custom cards') {
+    message.channel.sendMessage({files: ["https://cooltext.com/Rendered/Cool-Text-309521164883898.png"]});
+    message.channel.sendMessage('How to make your own Jeff Fight Cards');
+    message.channel.sendMessage('This website is used: https://www.mtgcardmaker.com/. A simple guide. Below is a url for existing cards to check against the card numbers.');
+    message.channel.sendMessage('https://imgur.com/a/e7Ui0R0');
+    message.channel.sendMessage('**************************************************************************************************************************************************************');
+    message.channel.sendMessage('AFTER YOU HAVE MADE YOUR CARD, ENTER ITS NAME AND NUMBER INTO THE DATABASE. ENTERING EMPTY ENTRIES WILL RESULT IN YOUR ABILITY TO SUBMIT CARDS BEING REVOKED!')
+    message.channel.sendMessage('https://jeff-fight-card-database.glitch.me/')
+    message.channel.sendMessage('Use "bjeff database" to view this anytime');
+    message.channel.sendMessage('**************************************************************************************************************************************************************');
+    message.channel.sendMessage('SECTION GUIDES');
+    message.channel.sendMessage('Card Name: Individual words must be in capital letters');
+    message.channel.sendMessage('Images: Preferably people actually called Jeff, we will probably run out of those soon anyway kek');
+    message.channel.sendMessage('DESCRIPTION SECTION');
+    message.channel.sendMessage('Jeff Power: Must have both words capitalized and have a space after the colon (e.g. Jeff Power: 40) ');
+    message.channel.sendMessage('Jeff Ability: Same rules with the colon. Must have a full stop.');
+    message.channel.sendMessage('Description: Same rules with the colon. Must have a full stop. Something funny or dumb, nothing offensive.');
+    message.channel.sendMessage('Bottom text: This should be "Jeff Fight"');
+    message.channel.sendMessage('Collector number: For now 01/any number that is not in the imgur gallery.');
+    
   }
 });
 
