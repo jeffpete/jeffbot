@@ -560,3 +560,50 @@ message.channel.send({ embed });
 }
 }
 });
+
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'testcmd') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+    
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fmystery.wav?1530136948568");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady =true && message.content == 'yuh') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+  
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fkillsound_5bd0b.mp3?1533931339415");
+    dispatcher.on("end", end => {voiceChannel.leave()});
+    var isReady = true;
+    
+     
+    
+       });
+}
+   
+});
