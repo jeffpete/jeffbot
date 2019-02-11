@@ -319,7 +319,11 @@ client.on('message', (message) => {
     }
   else if(message.content == 'bjeff help') {
     message.channel.sendMessage('https://jeffpetebothelp.glitch.me/');
+    message.channel.sendMessage('For voice line commands type bjeff vchelp');
     }
+  else if (message.content == 'bjeff vchelp') {
+    message.channel.sendMessage('https://jeffpetebothelp.glitch.me/vchelp.html');
+  }
   else if(message.content == 'bjeff onlygamerknow') {
     message.channel.sendMessage('https://i.imgur.com/sfUhK86.jpg');
     }
@@ -363,7 +367,7 @@ client.on('message', (message) => {
     message.channel.send('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclap.mp4?1545053825548');
   }
   else if(message.content == 'bjeff version') {
-    message.channel.send('Version is build 12012019');
+    message.channel.send('Version is build 11022019');
   }
 });
   
@@ -565,10 +569,10 @@ message.channel.send({ embed });
 client.on('message', (message) => {
 
   
-if(isReady = true && message.content == 'testcmd') {
+if(isReady = true && message.content == 'bjeff mystery') {
    var isReady = false;
    message.channel.sendMessage('jeff');
-    
+     
   
   var voiceChannel = message.member.voiceChannel;
   voiceChannel.join().then(connection =>
@@ -578,6 +582,7 @@ if(isReady = true && message.content == 'testcmd') {
     voiceChannel.leave();
 }, 3000);});
     var isReady = true;
+    
     
     
        });
@@ -604,6 +609,914 @@ if(isReady =true && message.content == 'yuh') {
      
     
        });
+}
+   
+});
+
+client.on('message', (message) => {
+  if(message.content == 'var') {
+    var isReady = true;
+  }
+});
+
+/* ------------------------VOICE COMMANDS -----------------------------*/
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff bazinga') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbazinga.mp3?1549881427565");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff based') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbased.mp3?1549881525607");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff accident') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Faccident.mp3?1549881548623");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff bug') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbug.mp3?1549881609744");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff binder') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbinder.mp3?1549881622343");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff bees') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbees.mp3?1549881629268");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff bottom') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbotm.mp3?1549881650994");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff stitch') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fstitch.mp3?1549882191490");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff thief') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fthef.mp3?1549882191884");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff welcome') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fwelcome.mp3?1549882192409");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff swagon') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fswagon.mp3?1549882192893");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff anime') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fanime.mp3?1549882193289");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff easy') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Feasy.mp3?1549882194574");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff fearless') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ffearless.mp3?1549882195135");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff fell') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ffell.mp3?1549882195541");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff detective') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fdetective.mp3?1549882195879");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff first') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ffirst.mp3?1549882196207");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff farmer') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ffarmer.mp3?1549882196484");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff fresh') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ffresh.mp3?1549882196731");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff elegant') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Felegant.mp3?1549882196995");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff furnace') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ffurn.mp3?1549882197281");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff gamers') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fgamers.mp3?1549882197567");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff insane') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Finsane.mp3?1549882197823");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff consume') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Flord.mp3?1549882198325");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff lord') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Flords.mp3?1549882199256");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff lot') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Flot.mp3?1549882199869");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff castle') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fsandcastle.mp3?1549882200364");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff speedy') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fspeedy.mp3?1549882200656");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff spicy') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fspicy.mp3?1549882200864");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff battery') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbattery.mp3?1549882201078");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff coop') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fcoop.mp3?1549882201432");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff dragon') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fdragon.mp3?1549882201665");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff money') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fmoney.mp3?1549882201979");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff ocean') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Focean.mp3?1549882202199");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff nebula') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fnebula.mp3?1549882202616");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff running') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Frunning.mp3?1549882202979");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
 }
    
 });
