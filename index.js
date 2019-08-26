@@ -114,6 +114,19 @@ client .on('message', (message) => {
 });
 
 client .on('message', (message) => {
+  if(message.content == 'No u') {
+   var number = 4;
+      var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+      case 1: message.channel.sendMessage ('that is a really bad comeback'); break;
+        case 2: message.channel.sendMessage ('*laughing hysterically'); break;
+      case 3: message.channel.sendMessage ('wowee good one'); break;
+      case 4: message.channel.sendMessage ('nobody has used that one before'); break;
+                  }
+  }
+});
+
+client .on('message', (message) => {
   if(message.content == '\:no_u:') {
    var number = 5;
       var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
@@ -192,7 +205,7 @@ const playAudio2 = (connection, audioUrl) => {
 };
 
 client.on('message', (message) => {
-    if (message.content == 'bjeff mystery') {
+    if (message.content == 'bjeff mysteryfdfsdfd') {
         var channel = message.member.voiceChannel;
 
         if (!channel) {
@@ -446,7 +459,7 @@ client .on('message', (message) => {
         case 64: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fclap.mp4?1545053825548'); break;
         case 65: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fahememe.mp4?1545053828103'); break;
         case 66: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fledleladlelo.mp4?1545053829057'); break;
-        case 67: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fbanefamilyvalues.mp4?1545053834601'); break;
+        case 67: message.channel.sendMessage ('This one gone, lol'); break;
         case 68: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fibis.mp4?1545053836620'); break;
         case 69: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Ftetris.mp4?1545231451945'); break;
         case 70: message.channel.sendMessage ('https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Feaster.mp4?1545231456694'); break;
@@ -1516,6 +1529,130 @@ if(isReady = true && message.content == 'bjeff running') {
     
     
        });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff foff') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Foff.wav?1555110724818");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff skrotex') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fbruh2.ogg?1559245285476");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff skrotex2') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/d8bbf4be-dc1a-4ca6-ab4a-3db061725444%2Fskrote.mp3?v=1562713223908");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+
+
+client.on('message', (message) => {
+
+  
+if(isReady = true && message.content == 'bjeff king') {
+   var isReady = false;
+   message.channel.sendMessage('jeff');
+     
+  
+  var voiceChannel = message.member.voiceChannel;
+  voiceChannel.join().then(connection =>
+  {
+     const dispatcher = connection.playArbitraryInput("https://cdn.glitch.com/9249b246-88d7-49ba-84df-1358652bb4d8%2Fcrang%20cramson.wav?v=1565465378881");
+    dispatcher.on("end", end => {setTimeout(function(){
+    voiceChannel.leave();
+}, 3000);});
+    var isReady = true;
+    
+    
+    
+       });
+
+}
+   
+});
+
+client.on('message', (message) => {
+
+const thisWord = "lolumeme";
+if(message.content.includes(thisWord))
+{
+ var number = 7;
+      var random = Math.floor (Math.random() * (number - 1 + 1)) + 1;
+    switch (random) {
+            case 1: message.channel.sendMessage({files: ["lol, he said weeb, lol"]}); break;
+      case 2: message.channel.sendMessage({files: ["woah."]}); break;
+      case 3: message.channel.sendMessage({files: ["weeb?"]}); break;
+      case 4: message.channel.sendMessage({files: ["actually, the correct term is otaku"]}); break;   
+        case 5: message.channel.sendMessage({files: ["https://preview.redd.it/2xc9fhv1y3t11.jpg?width=484&auto=webp&s=2e508d0697dab0902c1b720897617122a2a31aa9 only true gamers get this reference"]}); break; 
+        case 6: message.channel.sendMessage({files: ["ｙｏｕ　ｓａｙ　ｗｅｅｂ，　ａｎｄ　ｙｅｔ　ｙｏｕ　ｄｒｉｖｅ　ａ　ｆｏｒｄ　ｆｉｅｓｔａ　ｗｉｔｈ　ｎｏ　ｗｈｅｅｌｓ．　ｈａ！"]}); break; 
+        case 7: message.channel.sendMessage({files: ["weeb backwards is Batman Begins, a superhero film based on the DC comics character Batman. A fun factoid about Batman, is that his costume is modelled after an iguana, a scaled bird."]}); break; 
+        case 8: message.channel.sendMessage({files: ["i bet you've made eye contact with anime"]}); break;
+                  }        
 
 }
    
