@@ -323,3 +323,5 @@ if(isReady = true && message.content == 'testcmd') {
 }
    
 });
+
+bruh
