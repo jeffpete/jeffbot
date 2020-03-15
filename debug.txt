@@ -1,0 +1,4 @@
+if something fails try
+enable pnpm
+pnpm install
+check node_modules still exists
