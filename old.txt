@@ -169,7 +169,6 @@ client .on('message', (message) => {
 });
 
 
-
 client .on('message', (message) => {
   if(message.content == '`') {
         var VC = message.member.voiceChannel;
