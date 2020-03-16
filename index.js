@@ -30,7 +30,7 @@ client.on('ready',() => {
 });
      
 client.on('ready',() => {
-client.user.setActivity('at Ram Ranch | bjeff help for help');
+client.user.setActivity('at Ram Ranch|bjeff help');
 });
 
 const fs = require("fs");
