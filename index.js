@@ -18,28 +18,11 @@ const commando = require('discord.js-commando');
 const bot = new commando.Client();
 const client = new Discord.Client();
 
-// get admin commands from other file
-const adminCmds = require('./com.js');
-
 // set message listener 
 client.on('message', message => {
     let command = message.content;
 
-    // execute admin commands
-    // -> if function checkAdminCmd returns false, move on to checking 'other' commands
-    if ( adminCmds.checkAdminCmd(message) )
-        return;
-
-    // execute other commands
-    else {
-        switch(command) {
-            case '?PING':
-                message.reply('pong');
-                break;
-
-            // ... other commands here
-        }
-    }
+    // 
 });
 
 client.on('ready',() => {
